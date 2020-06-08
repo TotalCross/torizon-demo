@@ -32,10 +32,10 @@ host$ scp docker-compose.armxx.yml torizon@192.168.0.xxx:~/docker-compose.yaml
 
 In Torizon, you just need to run:
 ```bash
-host$ docker-compose up -d
+torizon$ docker-compose up -d
 ```
 
 To finish the application, run:
 ```bash
-host$ docker-compose down
+torizon$ docker-compose down
 ```
