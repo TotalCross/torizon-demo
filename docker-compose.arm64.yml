@@ -4,7 +4,7 @@ services:
     environment:
     # please uncomment the following line to accept the
     # EULA required to run imx8 vivante graphic drivers
-    # - ACCEPT_FSL_EULA=1
+      - ACCEPT_FSL_EULA=1
       - XDG_RUNTIME_DIR=/run/display
     container_name: weston
     image: torizon/arm64v8-debian-weston-vivante:latest
