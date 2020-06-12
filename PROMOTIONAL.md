@@ -2,11 +2,11 @@
 
 [TotalCross](https://www.toradex.com/pt-br/support/partner-network/services/200011/totalcross) is an Open Source SDK providing a Fast and Easy to Use way to build beautiful User Interfaces for embedded, IoT, mobile and desktop.
 
-TotalCross has added support for Linux ARM on version 6, this version included support for Torizon.
+TotalCross version 6 added support for Linux ARM and support for Torizon.
 
 ## TotalCross Demo for Torizon ##
 
-TotalCross has created a Demo container for Torizon and uploaded it to Docker Hub. On this container there are some of TotalCross's features:
+TotalCross has created a Demo container for Torizon and uploaded it to Docker Hub. On this container there are some of TotalCross' features:
 - Graphic API;
 - Screen transitions;
 - Animations;
@@ -33,7 +33,7 @@ This section provides information on how to use the TotalCross Demo container.
 
 ## Running TotalCross Demo container ##
 
-You just need to add `docker-compose.yaml` to your Torizon `root` folder. See what model to use beloww:
+You just need to add `docker-compose.yaml` to your Torizon `root` folder. See what model to use below:
 
 [TABS]
 [TAB-TITLE] 32-bits modules [/TAB-TITLE]
@@ -70,7 +70,7 @@ services:
        # ... for /dev/dri devices
        - 'c 226:* rmw'
   totalcross:
-    image: totalcross/torizon-demo:latest
+    image: totalcross/torizon-demo:1.0.1
     command: bash -c "./start.sh"
     network_mode: host
     volumes:
@@ -133,7 +133,7 @@ services:
       # ... for /dev/dri devices
       - "c 226:* rmw"
   totalcross:
-    image: totalcross/torizon-demo:latest
+    image: totalcross/torizon-demo:1.0.1
     command: bash -c "./start.sh"
     network_mode: host
     volumes:
